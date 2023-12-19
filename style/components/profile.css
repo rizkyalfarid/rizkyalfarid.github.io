@@ -1,0 +1,75 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+
+
+.main-profile h1 {
+  color: #094067;
+  font-size: 2rem;
+}
+
+.main-profile h2 {
+  color: #094067;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.main-profile p {
+  color: #5f6c7b;
+  margin-bottom: 10px;
+}
+
+.main-profile button {
+  border: none;
+  background-color: #3da9fc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 300ms;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.257);
+  margin-right: 5px;
+}
+
+.main-profile button:hover {
+  background-color: #0592ff;
+}
+
+.image-profile {
+  width: 300px;
+  border-radius: 50%;
+  display: flex;
+  overflow: hidden;
+}
+
+.image-profile img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width : 700px) {
+  main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .main-profile {
+    width: 50%;
+  }
+
+  .image-profile {
+    width: 25%;
+  }
+}
+

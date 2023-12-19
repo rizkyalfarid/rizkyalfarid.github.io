@@ -1,9 +1,12 @@
 .nav-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
   font-family: 'Poppins', sans-serif;
+  position: absolute;
+  right: 0;
+  left: 0;
 }
 
 .nav-container .nav-brand a {
@@ -52,7 +55,7 @@
 
 @media screen and (min-width : 700px) {
   .nav-container {
-    padding: 20px 60px;
+    padding: 20px 93px;
   }
 
   .hamburger-menu {
@@ -75,6 +78,7 @@
     font-size: 1rem;
     text-decoration: none;
     position: relative;
+    font-size: 0.9rem;
   }
   
   .nav-navigation li a:after {
@@ -98,11 +102,12 @@
     background-color: #3da9fc;
     color: white;
     font-family: 'Poppins', sans-serif;
-    padding: 10px 15px;
+    padding: 8px 10px;
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
     transition: 300ms;
+    font-size: 0.7rem;
   }
 
   .download:hover {
