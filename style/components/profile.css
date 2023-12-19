@@ -4,11 +4,8 @@ main {
   padding: 0 20px;
   font-family: 'Poppins', sans-serif;
   align-items: center;
-  justify-content: space-around;
-  height: 100vh;
+  justify-content: space-between;
 }
-
-
 
 .main-profile h1 {
   color: #094067;
@@ -23,7 +20,6 @@ main {
 
 .main-profile p {
   color: #5f6c7b;
-  margin-bottom: 10px;
 }
 
 .main-profile button {
@@ -31,13 +27,14 @@ main {
   background-color: #3da9fc;
   color: white;
   font-family: 'Poppins', sans-serif;
-  padding: 10px 15px;
+  padding: 8px 10px;
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
   transition: 300ms;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.257);
-  margin-right: 5px;
+  font-size: 0.8rem;
+  margin: 20px 3px;
 }
 
 .main-profile button:hover {
@@ -45,7 +42,7 @@ main {
 }
 
 .image-profile {
-  width: 300px;
+  width: 250px;
   border-radius: 50%;
   display: flex;
   overflow: hidden;
@@ -54,6 +51,28 @@ main {
 .image-profile img {
   width: 100%;
   object-fit: cover;
+  object-position: center;
+}
+
+.button .social {
+  display: none;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #094067;
+}
+
+.social-media .social {
+  font-size: 2rem;
+  cursor: pointer;
+  /* padding: 10px 0; */
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width : 700px) {
@@ -62,6 +81,7 @@ main {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    height: 100vh;
   }
 
   .main-profile {
@@ -70,6 +90,23 @@ main {
 
   .image-profile {
     width: 25%;
+  }
+
+  .social-media .social {
+    display: none;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .button .social {
+    display: inline-block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #094067;
   }
 }
 
