@@ -1,7 +1,6 @@
 main {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
   font-family: 'Poppins', sans-serif;
   align-items: center;
   justify-content: space-between;
