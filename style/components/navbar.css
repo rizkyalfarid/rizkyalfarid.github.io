@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px;
+  padding: 20px 20px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -44,4 +44,68 @@
 
 .show {
   top: 0;
- }
+}
+
+.download {
+  display: none;
+}
+
+@media screen and (min-width : 700px) {
+  .nav-container {
+    padding: 20px 60px;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav-navigation {
+    width: 400px;
+    position: unset;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #094067;
+    height: auto;
+    align-items: center;
+    background-color: inherit;
+  }
+
+  .nav-navigation li a {
+    color: #094067;
+    font-size: 1rem;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .nav-navigation li a:after {
+    content: '';
+    display: block;
+    height: 2px;  
+    width: 0; 
+    background-color: #094067;  
+    transition: width 0.3s ease; 
+  }
+  
+  .nav-navigation li a:hover:after {
+    width: 100%;
+  }
+  
+
+
+  .download {
+    display: block;
+    border: none;
+    background-color: #3da9fc;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 300ms;
+  }
+
+  .download:hover {
+    background-color: #0592ff;
+  }
+}
