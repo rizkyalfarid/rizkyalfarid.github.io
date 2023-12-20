@@ -7,6 +7,10 @@ main {
   justify-content: space-between;
 }
 
+.main-profile {
+  z-index: -2;
+}
+
 .main-profile h1 {
   color: #094067;
   font-size: 2rem;
@@ -73,6 +77,7 @@ main {
   border-radius: 50%;
   display: flex;
   overflow: hidden;
+  z-index: -1;
 }
 
 .image-profile img {
@@ -113,6 +118,7 @@ main {
 
   .main-profile {
     width: 50%;
+    z-index: 0;
   }
 
   .image-profile {
