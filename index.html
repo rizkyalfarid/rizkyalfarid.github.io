@@ -8,12 +8,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
   <div class="container">
     <header>
-      <nav class="nav-container">
+      <nav class="nav-container"  data-aos="zoom-in">
         <div class="nav-brand">
           <a href="#">RizkyAlFarid</a>
         </div>
@@ -30,19 +32,21 @@
       </nav>
     </header>
     <main>
-      <div class="main-profile">
+      <div class="main-profile" data-aos="fade-right">
         <div>
-          <h1>Hello👋, I'm Rizky Al Farid Hafizh</h1>
-          <h2>Frontend Web Developer</h2>
+          <h1>Hello👋, I'm <span>Rizky Al Farid Hafizh</span></h1>
+          <h2><span>Frontend Web Developer</span></h2>
           <p>Frontend Developer based in Cianjur. Focus to build and maintaining a website to increase accessibility and responsive interaction of every component. Make sure the web loads properly. Sometimes developing micro-interaction in the Frontend of the Website. And I am also integrating with backend API or CMS</p>
           <div class="button">
-            <div>
+            <div class="button-div">
               <button>Hire Me !</button>
-              <button>Download CV</button>
+              <button>Send Message📧</button>
             </div>
-            <i class="fa-brands fa-github social"></i>
-            <i class="fa-brands fa-instagram social"></i>
-            <i class="fa-brands fa-linkedin social"></i>
+            <div class="social-div">
+              <i class="fa-brands fa-github social"></i>
+              <i class="fa-brands fa-instagram social"></i>
+              <i class="fa-brands fa-linkedin social"></i>
+            </div>
           </div>
           <div class="social-media">
             <a href="">
@@ -57,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div class="image-profile">
+      <div class="image-profile" data-aos="fade-left">
         <figure>
           <img src="public/img/avatars.jpg" alt="Avatars Icon" title="Rizky Al Farid">
         </figure>
@@ -65,5 +69,6 @@
     </main>
   </div>
   <script src="scripts/index.js" type="module"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
