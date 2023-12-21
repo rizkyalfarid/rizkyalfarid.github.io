@@ -1,5 +1,6 @@
 @import url('./components/navbar.css');
 @import url('./components/profile.css');
+@import url('./components/about.css');
 
 * {
   margin: 0;

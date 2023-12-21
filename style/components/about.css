@@ -1,0 +1,50 @@
+.sub-container {
+  margin-top: 25px;
+  padding: 10px 20px;
+  background-color: white;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.stats .card-stats {
+  text-align: center;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.stats .card-stats h3 {
+  font-size: 1.5rem;
+}
+
+.stats .card-stats p {
+  color: #5f6c7b;
+}
+
+.sub-container .about {
+  padding: 40px;
+}
+
+.sub-container .about  h1{
+  margin-bottom: 20px;
+}
+
+.sub-container .about  p{
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width : 700px) {
+  .stats .card-stats {
+    text-align: center;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+}
