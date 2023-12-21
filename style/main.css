@@ -2,6 +2,7 @@
 @import url('./components/profile.css');
 @import url('./components/about.css');
 @import url('./components/footer.css');
+@import url('./components/favorite.css');
 
 * {
   margin: 0;

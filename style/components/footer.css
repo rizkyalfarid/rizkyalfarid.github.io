@@ -93,6 +93,11 @@ footer {
   border: none;
   border-radius: 10px;
   margin-left: 10px;
+  transition: 300ms;
+}
+
+.feedback button:hover {
+  background-color: #297dbc;
 }
 
 @media screen and (min-width : 700px) {
