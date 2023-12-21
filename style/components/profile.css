@@ -7,9 +7,7 @@ main {
   justify-content: space-between;
 }
 
-.main-profile {
-  z-index: -2;
-}
+
 
 .main-profile h1 {
   color: #094067;
@@ -17,11 +15,7 @@ main {
 }
 
 .main-profile h1 span {
-  background: rgb(2,0,36);
-  background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 90%);
-  background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 90%);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 90%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+  background-color: #3da9fc;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -103,8 +97,8 @@ main {
 .social-media .social {
   font-size: 2rem;
   cursor: pointer;
-  /* padding: 10px 0; */
   margin-bottom: 20px;
+  z-index: -10;
 }
 
 @media screen and (min-width : 700px) {

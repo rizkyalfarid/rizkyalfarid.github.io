@@ -56,8 +56,9 @@
 
 @media screen and (min-width : 700px) {
   .nav-container {
-    padding: 20px 93px;
+    padding: 20px 100px;
     position: absolute;
+    z-index: 999;
   }
 
   .hamburger-menu {
@@ -66,7 +67,6 @@
 
   .nav-navigation {
     width: 400px;
-    position: unset;
     flex-direction: row;
     justify-content: space-between;
     color: #094067;
