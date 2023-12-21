@@ -131,7 +131,6 @@ main {
     font-size: 2rem;
     cursor: pointer;
     color: #094067;
-    border: 2px solid #094067;
     text-align: center;
     border-radius: 50%;
     width: 45px;
@@ -142,8 +141,7 @@ main {
   }
 
   .button .social:hover {
-    background-color: #094067;
-    color: white;
+    color: #ef4565;
   }
 
   .button .social-div {
