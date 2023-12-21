@@ -8,6 +8,9 @@
   right: 0;
   left: 0;
   top: 0;
+  position: relative;
+  z-index: 20; /* Atur sesuai kebutuhan */
+  transition: top 300ms;
 }
 
 .nav-container .nav-brand a {
@@ -56,9 +59,9 @@
 
 @media screen and (min-width : 700px) {
   .nav-container {
-    padding: 20px 100px;
-    position: absolute;
+    padding: 20px 99px;
     z-index: 999;
+    position: absolute;
   }
 
   .hamburger-menu {
@@ -69,10 +72,10 @@
     width: 400px;
     flex-direction: row;
     justify-content: space-between;
-    color: #094067;
     height: auto;
-    align-items: center;
+    color: #094067;
     background-color: inherit;
+    position : unset;
   }
 
   .nav-navigation li a {
