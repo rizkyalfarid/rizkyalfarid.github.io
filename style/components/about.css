@@ -2,8 +2,8 @@
   margin-top: 25px;
   padding: 10px 20px;
   background-color: white;
-  border-top-left-radius: 15%;
-  border-top-right-radius: 15%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .sub-container .about {
-  padding: 40px;
+  padding: 20px;
 }
 
 .sub-container .about  h1{
@@ -46,5 +46,23 @@
     width: 50%;
     box-sizing: border-box;
     padding: 20px;
+  }
+
+  .sub-container .about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 50px;
+  }
+
+  .sub-container .about h1 {
+    font-size: 2.5rem;
+    color: #094067;
+  }
+  
+  .sub-container .about p {
+    color: #5f6c7b;
   }
 }
