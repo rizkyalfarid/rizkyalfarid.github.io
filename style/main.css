@@ -3,6 +3,7 @@
 @import url('./components/about.css');
 @import url('./components/footer.css');
 @import url('./components/favorite.css');
+@import url('./components/recent.css');
 
 * {
   margin: 0;
