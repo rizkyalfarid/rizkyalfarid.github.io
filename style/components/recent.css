@@ -1,6 +1,22 @@
 .recent {
   padding: 0 20px;
-  border: 1px solid black;
   padding: 10px;
   text-align: center;
+  border: 1px solid black;
+}
+
+.recent .image-project {
+  width: 400px;
+  margin: 10px auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.recent .description {
+  text-align: start;
+  padding: 0 25px;
+}
+
+.recent .image-project img {
+  width: 100%;
 }
