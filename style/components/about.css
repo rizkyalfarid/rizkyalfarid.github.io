@@ -76,15 +76,17 @@
   .sub-container .about {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.3fr;
     padding-bottom: 100px;
-    overflow-x: hidden;
     justify-items: center;
+    align-items: center;
+    column-gap: 25px;
   }
 
   .sub-container .about h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: #094067;
+    text-align: start;
   }
   
   .sub-container .about p {
