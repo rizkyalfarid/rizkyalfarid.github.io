@@ -13,25 +13,25 @@
 </head>
 <body>
   <div class="container">
-    <header  data-aos="fade-down">
+    <header>
       <nav class="nav-container">
         <div class="nav-brand">
           <a href="#">RizkyAlFarid</a>
         </div>
         <ul class="nav-navigation" id="navigation">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Skill</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#skill">Skill</a></li>
         </ul>
         <div class="hamburger-menu" id="hamburgerBtn">
           <i class="fa-solid fa-bars-staggered icon" id="hamburger"></i>
         </div>
-        <button type="download" class="download">Donwload CV</button>
+        <button type="button" class="download" id="downloadButton">Download CV</button>
       </nav>
     </header>
     <main>
-      <div class="main-profile" data-aos="fade-right" data-aos-duration="1000">
+      <div class="main-profile" data-aos="fade-up" data-aos-duration="1000" id="home">
         <div id="main-profile">
           <h1>Hello👋, I am <span>Rizky Al Farid Hafizh</span></h1>
           <h2><span>Frontend Web Developer</span></h2>
@@ -72,7 +72,7 @@
           </div>
         </div>
       </div>
-      <div class="image-profile" data-aos="fade-left" data-aos-duration="1000">
+      <div class="image-profile" data-aos="fade-up" data-aos-duration="1000">
         <figure>
           <img src="public/img/avatars.jpg" alt="Avatars Icon" title="Rizky Al Farid">
         </figure>
@@ -100,7 +100,7 @@
         </div>
       </div>
 
-      <div class="about">
+      <div class="about" id="about">
         <div data-aos="fade-up">
           <h1>About My Background</h1>
         </div>
@@ -108,12 +108,12 @@
           <p>Since high school I have learned the basics of website programming, even though I majored in computer and network engineering at that time. but Im curious about the website, there I decided to explore more about HTML CSS JS</p>
           <p>and when i graduated from Vocational High School, i tried to continue to pursue that field, i tried to find a university that has a focus on information technology</p>
           <div class="certificate">
-            <img src="public/img/fundamental fe.jpg" alt="certificate">
+            <img src="public/certificate/fe-expert.jpeg" alt="certificate">
           </div>
         </div>
       </div>
     </div>
-    <div class="favorite">
+    <div class="favorite" id="skill">
       <div>
         <h1>My Favorite Technology</h1>
       </div>
@@ -133,8 +133,9 @@
       </div>
     </div>
     <!-- <ABOUT ME> -->
+      
     <!-- RECENT PROJECT -->
-    <div class="recent__project">
+    <div class="recent__project" id="projects">
       <h1>Recent Projects</h1>
       <div class="card__container">
         <div class="card__project" data-aos="fade-up" data-aos-duration="3000">
@@ -153,7 +154,7 @@
             <img src="./public/img/projects/impact-company.jpeg" alt="Sultan Cafe">
           </div>
           <div class="card__body">
-            <h2>React JS | JSX</h2>
+            <h2>HTML | CSS | JS</h2>
             <a href="#">
               <h1>Impact Company Landing Page</h1>
             </a>
@@ -164,7 +165,7 @@
             <img src="./public/img/projects/portofolio.jpeg" alt="Sultan Cafe">
           </div>
           <div class="card__body">
-            <h2>HTML | CSS | JS | Tailwind</h2>
+            <h2>HTML | CSS | JS </h2>
             <a href="#">
               <h1>Portfolio Website for Personal Branding</h1>
             </a>
@@ -191,18 +192,18 @@
       <div class="socmed">
         <h2>Social Media</h2>
         <ul>
-          <li><a href="#">Github</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
+          <li><a href="https://github.com/rizkyAlFarid" target="_blank">Github</a></li>
+          <li><a href="https://www.instagram.com/rizky31afh_/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.facebook.com/rizky.alfarid.1/" target="_blank">Facebook</a></li>
+          <li><a href="www.linkedin.com/in/rizky-al-farid-hafizh" target="_blank">Linkedln</a></li>
         </ul>
       </div>
       <div class="feedback">
         <h2>Feedback</h2>
         <p>Give me a feedback for make this web more better :</p>
         <form action="">
-          <input type="text" placeholder="Type a feedback">
-          <button type="submit">Submit Feedback</button>
+          <input type="text" placeholder="Type a feedback" id="feedbackBox">
+          <button type="submit" id="feedbackBtn">Submit Feedback</button>
         </form>
       </div>
     </footer>
