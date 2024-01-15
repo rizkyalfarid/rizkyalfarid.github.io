@@ -80,10 +80,18 @@ footer {
   margin-bottom: 10px;
 }
 
+.feedback form {
+  display: flex;
+}
+
 .feedback input {
   border: none;
   border-radius: 10px;
   padding: 7px 10px;
+}
+
+.feedback input::placeholder {
+  font-family: 'Poppins';
 }
 
 .feedback button {
@@ -94,6 +102,7 @@ footer {
   border-radius: 10px;
   margin-left: 10px;
   transition: 300ms;
+  font-family: 'Poppins';
 }
 
 .feedback button:hover {
@@ -103,7 +112,7 @@ footer {
 @media screen and (min-width : 700px) {
   footer {
     grid-template-areas: 'portfolio discover socialmedia feedback';
-    column-gap: 150px;
+    column-gap: 90px;
     padding: 30px;
   }
 
@@ -122,10 +131,10 @@ footer {
   }
 }
 
-@media screen and (min-width : 1000px) {
+/* @media screen and (min-width : 1000px) {
   footer { 
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
   }
-}
+} */
 
