@@ -1,0 +1,62 @@
+.favorite {
+  width: 100%;
+  font-size: 1rem;
+  padding: 50px 20px;
+  background-color: #eaeaea;
+  font-family: 'Poppins', sans-serif;
+}
+
+.favorite h1 {
+  margin-bottom: 50px;
+  background: rgb(0, 78, 138);
+  background: -moz-linear-gradient(90deg, rgba(0, 78, 138, 1) 0%, rgba(0, 96, 171, 1) 62%, rgba(25, 131, 213, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(0, 78, 138, 1) 0%, rgba(0, 96, 171, 1) 62%, rgba(25, 131, 213, 1) 100%);
+  background: linear-gradient(90deg, rgba(0, 78, 138, 1) 0%, rgba(0, 96, 171, 1) 62%, rgba(25, 131, 213, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004e8a", endColorstr="#1983d5", GradientType=1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+
+.favorite .image-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 20px;
+}
+
+.favorite .image-container .image {
+  width: 100px;
+}
+
+.favorite .image-container .image img {
+  object-fit: cover;
+  width: 100%;
+}
+
+@media screen and (min-width : 700px) {
+  .favorite {
+    padding: 100px 20px;
+  }
+
+  .favorite h1 {
+    font-size: 3em;
+  }
+  .favorite .image-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 0;
+  }
+}
+
+@media screen and (min-width : 1000px) {
+  .favorite {
+    max-width: 1500px;
+    margin: auto;
+  }
+}

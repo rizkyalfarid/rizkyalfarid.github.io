@@ -1,0 +1,64 @@
+.recent__project > h1{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 25px;
+}
+
+.recent__project {
+  background-color: white;
+}
+
+.card__container {
+  display: grid;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+.card__project {
+  margin-bottom: 45px;
+}
+
+
+.card__header img {
+  width: 100%;
+}
+
+
+.card__body h2 {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #5f6c7b;
+}
+
+.card__body a {
+  text-decoration: none;
+  color: #094067;
+}
+
+.card__body a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width : 700px) {
+  .card__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+  }
+  .card__header {
+    position: relative;
+    transition: bottom 1s ease; 
+  }
+  
+  .card__header:hover {
+    bottom: 10px;
+  }
+}
+
+
+@media screen and (min-width : 1000px) {
+  .card__container {
+    max-width: 1500px;
+    margin: auto;
+  }
+}

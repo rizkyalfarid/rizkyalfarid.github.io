@@ -1,0 +1,161 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-profile h1 {
+  color: #094067;
+  font-size: 2rem;
+}
+
+.main-profile h1 span {
+  background-color: #3da9fc;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-profile h2 {
+  position: relative;
+  display: inline-block;
+  color: #094067;
+}
+
+.main-profile h2 span {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #094067;
+  animation: typing 7s steps(20, end) infinite alternate;
+}
+
+@keyframes typing {
+  from, to {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+}
+
+.main-profile p {
+  color: #5f6c7b;
+}
+
+.main-profile button {
+  border: none;
+  background-color: #3da9fc;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 300ms;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.104);
+  font-size: 0.8rem;
+  margin: 30px 3px;
+}
+
+.main-profile button:hover {
+  background-color: #0592ff;
+}
+
+.image-profile {
+  width: 250px;
+  border-radius: 50%;
+  display: flex;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.image-profile img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.button .social {
+  display: none;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #094067;
+}
+
+.social-media .social {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  z-index: -10;
+}
+
+@media screen and (min-width : 700px) {
+  main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+
+  .main-profile {
+    width: 50%;
+    z-index: 0;
+  }
+
+  .image-profile {
+    width: 25%;
+  }
+
+  .social-media .social {
+    display: none;
+  }
+
+  .button {
+    align-items: center;
+    display: flex;
+  }
+
+  .button .social {
+    display: inline-block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #094067;
+    text-align: center;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    margin-right: 15px;
+    transition: 300ms;
+  }
+
+  .button .social:hover {
+    color: #ef4565;
+  }
+
+  .button .social-div {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width : 1000px) {
+  main {
+    max-width: 1500px;
+    margin: auto;
+  }
+}
+

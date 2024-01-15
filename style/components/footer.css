@@ -1,0 +1,131 @@
+footer {
+  display: grid;
+  grid-template-areas: 
+  'portofolio portofolio'
+  'discover socialmedia'
+  'feedback feedback';
+  justify-content: space-between;
+  background-color: #094067;
+  box-sizing: border-box;
+  padding: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-size: .8rem;
+}
+
+.portfolio {
+  margin-bottom: 20px;
+  grid-area: portofolio;
+}
+
+.portfolio h1 {
+  margin-bottom: 10px;
+  color: #fffffe;
+}
+
+.portfolio p {
+  color: #fffffe;
+  margin-bottom: 20px;
+}
+
+.discover, .socmed  {
+  color: white;
+  margin-bottom: 20px;
+  /* border: 1px solid white; */
+}
+
+.discover {
+  grid-area: discover;
+}
+
+.discover h2 {
+  margin-bottom: 20px;
+}
+
+.discover ul li {
+  margin-bottom: 10px;
+}
+
+.discover ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.socmed {
+  grid-area: socialmedia;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.socmed h2 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.socmed ul li {
+  margin-bottom: 10px;
+}
+
+.socmed ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.feedback {
+  color: white;
+  grid-area: feedback;
+}
+
+.feedback p {
+  margin-bottom: 10px;
+}
+
+.feedback input {
+  border: none;
+  border-radius: 10px;
+  padding: 7px 10px;
+}
+
+.feedback button {
+  padding: 8px;
+  color: #fffffe;
+  background-color: #3da9fc;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  transition: 300ms;
+}
+
+.feedback button:hover {
+  background-color: #297dbc;
+}
+
+@media screen and (min-width : 700px) {
+  footer {
+    grid-template-areas: 'portfolio discover socialmedia feedback';
+    column-gap: 150px;
+    padding: 30px;
+  }
+
+  .portfolio {
+    grid-area: portfolio;
+  }
+  .discover {
+    grid-area: discover;
+  }
+  .socmed {
+    grid-area: socialmedia;
+  } 
+
+  .feedback {
+    grid-area: feedback;
+  }
+}
+
+@media screen and (min-width : 1000px) {
+  footer { 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+  }
+}
+

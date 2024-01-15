@@ -1,0 +1,108 @@
+.sub-container {
+  margin-top: 25px;
+  padding: 10px 20px;
+  background-color: white;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.stats .card-stats {
+  text-align: center;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.stats .card-stats h3 {
+  font-size: 1.5rem;
+}
+
+.stats .card-stats p {
+  color: #5f6c7b;
+}
+
+.sub-container .about {
+  padding: 20px;
+}
+
+.sub-container .about  h1{
+  margin-bottom: 20px;
+}
+
+.sub-container .about  p{
+  margin-bottom: 20px;
+  color: #5f6c7b;
+}
+
+.certificate {
+  width: 100%;
+}
+
+.certificate img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (min-width : 700px) {
+  .sub-container {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    justify-content: center;
+  }
+
+  .sub-container .stats {
+    position: relative;
+    top: -100px;
+    background-color: white;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+  .stats .card-stats {
+    text-align: center;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .sub-container .about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    padding-bottom: 100px;
+    justify-items: center;
+    align-items: center;
+    column-gap: 25px;
+  }
+
+  .sub-container .about h1 {
+    font-size: 4rem;
+    color: #094067;
+    text-align: start;
+    text-align: center;
+  }
+  
+  .sub-container .about p {
+    color: #5f6c7b;
+  }
+
+  .certificate {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+
+@media screen and (min-width : 1000px) {
+  .stats, .about {
+    max-width: 1500px;
+    margin: auto;
+  }
+}

@@ -1,0 +1,128 @@
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 20px;
+  right: 0;
+  left: 0;
+  top: 0;
+  position: relative;
+  z-index: 20; /* Atur sesuai kebutuhan */
+  transition: top 300ms;
+}
+
+.nav-container .nav-brand a {
+  color: #094067;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav-container .nav-brand {
+  position: relative;
+  z-index: 9;
+  font-weight: bold;
+}
+
+.nav-navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #094067;
+  top: -60rem;
+  left: 0;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 300ms;
+ }
+
+.nav-navigation li a {
+  color: white;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.show {
+  top: 0;
+}
+
+.download {
+  display: none;
+}
+
+@media screen and (min-width : 700px) {
+  .nav-container {
+    padding: 20px 99px;
+    z-index: 999;
+    position: absolute;
+    backdrop-filter: blur(1px);
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav-navigation {
+    width: 400px;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    color: #094067;
+    background-color: inherit;
+    position : unset;
+  }
+
+  .nav-navigation li a {
+    color: #094067;
+    font-size: 1rem;
+    text-decoration: none;
+    position: relative;
+    font-size: 0.9rem;
+  }
+  
+  .nav-navigation li a:after {
+    content: '';
+    display: block;
+    height: 2px;  
+    width: 0; 
+    background-color: #094067;  
+    transition: width 0.3s ease; 
+  }
+  
+  .nav-navigation li a:hover:after {
+    width: 100%;
+  }
+
+  .download {
+    display: block;
+    border: none;
+    background-color: #3da9fc;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 300ms;
+    font-size: 0.7rem;
+  }
+
+  .download:hover {
+    background-color: #0592ff;
+  }
+}
+
+@media screen and (min-width : 1000px) {
+  .nav-container {
+    max-width: 1500px;
+    margin: auto;
+  }
+}
+
