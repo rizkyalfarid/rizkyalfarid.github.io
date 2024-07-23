@@ -31,15 +31,15 @@ header nav ul {
   left: 0;
   right: 0;
   top: -490px;
-  background-color: #1D2B53;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  background-color: #252A30;
   transition: top 0.3s ease;
   color: white;
   list-style: none;
-  padding-top: 100px;
+  padding-top: 120px;
   padding-bottom: 50px;
 }
 
