@@ -1,4 +1,6 @@
 @import url(components/nav.css);
+@import url(components/hero-section.css);
+
 @font-face {
   font-family: "Raleway";
   src: url('../font/Raleway-VariableFont_wght.ttf') format('truetype');
@@ -28,7 +30,34 @@ body {
 }
 
 body.light .hamburger-menu {
-  color: #000; /* Warna ikon dalam mode gelap */
+  color: #000;
+}
+
+.blur {
+  width: 100px;
+  height: 100px;
+  background-color:  #16F7FF;
+  position: absolute;
+  filter: blur(90px);
+}
+
+.blur-light {
+  width: 100px;
+  height: 100px;
+  background-color:  #0fb1b6;
+  position: absolute;
+  filter: blur(90px);
+}
+
+@media screen and (min-width : 760px) {
+  .blur {
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    left: -50px;
+    filter: blur(150px);
+  }
+
 }
 
 

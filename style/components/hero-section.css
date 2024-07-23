@@ -1,0 +1,136 @@
+.hero-section {
+  width: 90%;
+  margin: 90px auto 0 auto;
+}
+
+.opened-word {
+  line-height: 2em;
+}
+
+.opened-word h1 {
+  margin-bottom: 10px;
+  line-height: 1.3em;
+}
+
+.opened-word h1 span {
+  color: #16F7FF;
+}
+
+.opened-word h3 {
+  margin-bottom: 10px;
+  color: #16F7FF;
+}
+
+.opened-word p {
+  margin-bottom: 10px;
+}
+
+.opened-word .buttons a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  background-color: #16F7FF;
+  padding: 5px 8px;
+  margin-right: 10px;
+  box-shadow: 0 0 5px #16F7FF;
+  transition: .3s ease;
+}
+
+.opened-word .buttons a:hover {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  background-color: #13c6cc;
+  padding: 5px 8px;
+  margin-right: 10px;
+  box-shadow: 0 0 5px #16F7FF;
+}
+
+.image-illustration {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 30px auto 0 auto;
+  border: 3px solid #16F7FF;
+}
+
+.image-illustration img {
+  width: 100%;
+}
+
+.typing-container {
+  display: flex;
+  align-items: center;
+}
+
+h3 {
+  color: #61dafb;
+  font-family: 'Raleway', Courier, monospace;
+  white-space: nowrap;
+  border-right: .15em solid #61dafb;
+  padding-right: 5px;
+  font-size: 1.2em;
+}
+
+.typing {
+  animation: typing 4s steps(40, end), blink-caret .75s step-end;
+  animation-fill-mode: forwards;
+}
+
+.typing-reverse {
+  animation: typing-reverse 4s steps(40, end) reverse, blink-caret .75s step-end;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Animation for typing effect in reverse */
+@keyframes typing-reverse {
+  from { width: 100% }
+  to { width: 0 }
+}
+
+/* Animation for blinking caret */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #61dafb }
+}
+@media screen and (min-width : 760px) {
+  .hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    place-items: center;    
+    margin: 0 auto 0 auto;
+  }
+
+  .opened-word {
+    font-size: 15px;
+    line-height: 1.3em;
+  }
+
+  .opened-word h1 {
+    font-size: 3em;
+  }
+
+  .opened-word h3 {
+    font-size: 1.7em;
+  }
+
+  .opened-word p {
+    margin: 10px 0 30px;
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+
+  .image-illustration {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    margin-left: 200px;
+  }
+}

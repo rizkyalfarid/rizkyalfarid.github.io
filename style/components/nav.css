@@ -1,5 +1,7 @@
 header {
   width: 100%;
+  top: 0;
+  position: absolute;
 }
 
 header nav {
@@ -28,15 +30,17 @@ header nav ul {
   width: 100%;
   left: 0;
   right: 0;
-  top: -400px;
-  background-color: rgba(0, 0, 0, 0.662);
+  top: -490px;
+  background-color: #1D2B53;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  transition: .3s ease;
+  transition: top 0.3s ease;
   color: white;
+  list-style: none;
   padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 header nav ul li {
@@ -46,6 +50,13 @@ header nav ul li {
 header nav ul li a {
   color: white;
   text-decoration: none;
+  transition: .3s ease;
+}
+
+header nav ul li a:hover {
+  color: black !important;
+  background-color: white;
+  padding: 5px 10px;
 }
 
 .toggle {
@@ -103,13 +114,11 @@ header nav ul li a {
 }
 
 .show {
-  top : 0;
+  top : -30px;
   height: 60vh;
 }
 
 @media screen and (min-width : 760px) {
- 
-
   .hamburger-menu {
     display: none;
   }
@@ -174,6 +183,14 @@ header nav ul li a {
     color: white;
     margin-left: 20px;
     text-decoration: none;
+  }
+
+  header nav ul li a:hover{
+    color:  #16F7FF !important;
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 0;
+    background-color: transparent;
   }
 
   header nav ul li:nth-child(1) {
@@ -250,7 +267,10 @@ header nav ul li a {
   }
 
   nav ul li a:hover {
-    color: #16F7FF;
+    color: #16F7FF !important;
     text-shadow: 0 0 10px #16F7FF, 0 0 20px #16F7FF, 0 0 30px #16F7FF;
+  }
+  header nav ul {
+    background-color: transparent !important;
   }
 }
