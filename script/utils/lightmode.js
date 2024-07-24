@@ -37,9 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
       spans[0].style.color = '#35A29F';
       spans[1].style.color = '#97FEED';
       document.querySelector('header nav ul').style.backgroundColor = '#252A30';
-      document.querySelector('.opened-word h1 span').style.color = '#97FEED';
+      document.querySelector('.opened-word h1 span').style.color = '#16F7FF';
       document.querySelector('.opened-word h1').style.color = 'white';
-      document.getElementById('typing-text').style.color = '#97FEED';
+      document.getElementById('typing-text').style.color = '#16F7FF';
 
       document.querySelectorAll('.buttons a').forEach( item => {
         item.style.backgroundColor = '#97FEED';

@@ -6,12 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (adalahModeTerang) {
       // Mode Terang
       document.body.style.color = '#333';
-      
       const nav = document.querySelector('header nav') as HTMLElement | null;
       if (nav) {
         (nav.querySelector('ul') as HTMLElement).style.backgroundColor = '#eaeaea';
       }
-      
       document.querySelectorAll('header nav ul li a').forEach((link) => {
         (link as HTMLElement).style.color = 'black';
       });
