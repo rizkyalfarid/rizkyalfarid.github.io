@@ -6,7 +6,7 @@ header {
 
 header nav {
   display: flex;
-  width: 90%;
+  width: 80%;
   margin: 30px auto 0 auto;
   justify-content: space-between;
   align-items: center;
