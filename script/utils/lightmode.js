@@ -23,7 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.buttons a').forEach( item => {
         item.style.backgroundColor = '#021526';
         item.style.color = 'white';
+        item.style.boxShadow = 'none';
       })
+
+      document.querySelector('.box-item--perkenalan h1').style.color = '#000';
+      document.querySelector('.box-item--perkenalan').style.border = '2px solid #021526';
+      document.querySelector('.image-illustration').style.border = '3px solid #021526'
     } else {
       // Mode Gelap
       document.body.style.backgroundColor = '';
@@ -42,9 +47,14 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('typing-text').style.color = '#16F7FF';
 
       document.querySelectorAll('.buttons a').forEach( item => {
-        item.style.backgroundColor = '#97FEED';
+        item.style.backgroundColor = '#16F7FF';
         item.style.color = 'black';
+        item.style.boxShadow = '0 0 5px #16F7FF';
       })
+
+      document.querySelector('.box-item--perkenalan h1').style.color = '#16F7FF';
+      document.querySelector('.box-item--perkenalan').style.border = '2px solid #16F7FF';
+      document.querySelector('.image-illustration').style.border = '3px solid #16F7FF'
     }
   };
 

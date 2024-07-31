@@ -7,12 +7,12 @@
   line-height: 2em;
 }
 
-.opened-word h1 {
+.opened-word > h1 {
   margin-bottom: 10px;
   line-height: 1.3em;
 }
 
-.opened-word h1 span {
+.opened-word > h1 span {
   color: #16F7FF;
 }
 
@@ -64,7 +64,7 @@
   align-items: center;
 }
 
-h3 {
+.typing-container > h3 {
   color: #61dafb;
   font-family: 'Raleway', Courier, monospace;
   white-space: nowrap;
@@ -99,6 +99,8 @@ h3 {
   from, to { border-color: transparent }
   50% { border-color: #61dafb }
 }
+
+
 @media screen and (min-width : 760px) {
   .hero-section {
     display: grid;

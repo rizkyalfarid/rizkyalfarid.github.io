@@ -1,5 +1,6 @@
 import './utils/lightmode.js';
 import './utils/hamburger.js';
+import './utils/aos.js';
 
 //typing effect
 document.addEventListener('DOMContentLoaded', () => {

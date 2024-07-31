@@ -6,6 +6,7 @@
   <title>RIZKY AL FARID WEBSITE</title>
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <div class="blur"></div>
@@ -18,7 +19,7 @@
       </div>
       <ul id="navigation">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#">Tentang Saya</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Skills</a></li>
         <li><a href="#">Portfolio</a></li>
@@ -36,21 +37,51 @@
   </header>
   
   <main class="hero-section">
-    <div class="opened-word">
+    <div class="opened-word" data-aos="fade-right">
       <h1>Halo, Saya <span>Rizky Al Farid Hafizh</span></h1>
       <div class="typing-container">
         <h3 id="typing-text"></h3>
       </div>
-      <p>Halo! Saya seorang frontend web developer dari Cianjur yang sedang menempuh pendidikan di Universitas Komputer Indonesia. Temukan karya dan perjalanan saya dalam dunia programming di sini :D</p>
+      <p>Saya seorang frontend web developer dari Cianjur yang sedang menempuh pendidikan di Universitas Komputer Indonesia. Temukan karya dan perjalanan saya dalam dunia programming di sini :D</p>
       <div class="buttons">
         <a href="">Hire Me</a>
         <a href="">Kirim Pesan</a>
       </div>
     </div>
-    <div class="image-illustration">
+    <div class="image-illustration" data-aos="fade-left">
       <img src="img/icon/9440461.jpg" alt="">
     </div>
   </main>
+
+  
+  <section class="tentang-saya">
+    <div class="tentang-saya--box-container">
+      <div class="box-item--perkenalan">
+        <h1>Perkenalan Saya</h1>
+        <p>Halo! Saya seorang mahasiswa ilmu komputer yang tinggal di Cianjur dan saat ini berkuliah di Universitas Komputer Indonesia Kota Bandung. Saya memiliki ketertarikan dalam pengembangan teknologi dan web, dan selalu bersemangat untuk mengeksplorasi berbagai bidang dalam dunia komputer.</p>
+      </div>
+      <div class="box-item-skill">
+        <div class="skill-box">
+          <h2>Frontend</h2>
+          <span class="skills--item">HTML</span>
+          <span class="skills--item">CSS</span>
+          <span class="skills--item">JAVASCRIPT</span>
+          <span class="skills--item">JQUERY</span>
+          <span class="skills--item">TAILWIND</span>
+          <span class="skills--item">BOOTSTRAP</span>
+          <span class="skills--item">REACTJS</span>
+        </div>
+        <div class="skill-box">
+          <h2>UI/UX Design</h2>
+          <span class="skills--item">Figma (Only)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  
   <script src="script/main.js" type="module"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </body>
 </html>

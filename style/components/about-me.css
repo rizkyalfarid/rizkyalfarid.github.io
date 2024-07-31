@@ -1,0 +1,72 @@
+.tentang-saya {
+  width: 90%;
+  margin: 50px auto 0 auto;
+}
+
+.tentang-saya .tentang-saya--title {
+  text-align: center;
+  color: #16F7FF;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.tentang-saya--box-container {
+  display: grid;
+  grid-template-areas: 'about about'
+                      'skill skill';
+}
+
+.box-item--perkenalan {
+  border: 2px solid #16F7FF;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.box-item--perkenalan h1 {
+  margin-bottom: 10px;
+  color: #16F7FF;
+}
+
+.box-item--perkenalan p {
+  line-height: 1.6em;
+}
+
+.box-item-skill {
+  grid-area: skill;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.box-item-skill .skill-box > h2 {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.box-item-skill .skill-box > span {
+  display: inline-block;
+  background-color: rgb(57, 57, 57);
+  color: white;
+  padding: 5px;
+  margin: 5px auto;
+  transition: .3s ease;
+}
+
+.box-item-skill .skill-box > span:hover {
+  color: black;
+  background-color: #16F7FF;
+  transform: scale(1.05);
+}
+
+
+
+@media screen and (min-width : 760px) {
+  .tentang-saya--box-container {
+    grid-template-areas: 'about skill'
+                         'about skill';
+    column-gap: 40px;
+  }
+}
