@@ -6,7 +6,7 @@ header {
 
 header nav {
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: 30px auto 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -119,6 +119,10 @@ header nav ul li a:hover {
 }
 
 @media screen and (min-width : 760px) {
+  header nav {
+    width: 80%;
+  }
+  
   .hamburger-menu {
     display: none;
   }
@@ -273,4 +277,5 @@ header nav ul li a:hover {
   header nav ul {
     background-color: transparent !important;
   }
+
 }

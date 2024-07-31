@@ -1,5 +1,5 @@
 .tentang-saya {
-  width: 80%;
+  width: 90%;
   margin: 50px auto 0 auto;
 }
 
@@ -22,6 +22,7 @@
   text-align: center;
   border-radius: 20px;
   margin-bottom: 20px;
+  grid-area: about;
 }
 
 .box-item--perkenalan h1 {
@@ -53,7 +54,6 @@
   padding: 5px;
   margin: 5px auto;
   transition: .3s ease;
-  border-radius: 5px;
 }
 
 .box-item-skill .skill-box > span:hover {
@@ -62,12 +62,18 @@
   transform: scale(1.05);
 }
 
-
-
 @media screen and (min-width : 760px) {
+  .tentang-saya {
+    width: 80%;
+    margin: auto;
+  }
   .tentang-saya--box-container {
     grid-template-areas: 'about skill'
                          'about skill';
     column-gap: 40px;
+  }
+
+  body {
+    padding-bottom: 200px;
   }
 }
