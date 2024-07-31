@@ -65,10 +65,10 @@
 }
 
 .typing-container > h3 {
-  color: #61dafb;
+  color: #16F7FF;
   font-family: 'Raleway', Courier, monospace;
   white-space: nowrap;
-  border-right: .15em solid #61dafb;
+  border-right: .15em solid #16F7FF;
   padding-right: 5px;
   font-size: 1.2em;
 }
